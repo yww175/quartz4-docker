@@ -11,14 +11,10 @@
             "id": "e6814ab194b83975",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "国网冀北投标/评分标准/商务评分标准.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "商务评分标准"
+              "title": "新标签页"
             }
           }
         ]
@@ -185,13 +181,52 @@
   },
   "active": "e6814ab194b83975",
   "lastOpenFiles": [
-    "国网冀北投标/评分标准/技术评分标准.md",
-    "国网冀北投标/评分标准/报价评分标准.md",
-    "技术笔记/读取Excel_xls文件.md",
-    "国网冀北投标/评分标准/商务评分标准.md",
-    "技术笔记",
-    "未命名.canvas",
-    "欢迎.md",
-    "qq.md"
+    "node_modules/rxjs/dist/types/internal/util/subscribeToArray.d.ts.map",
+    "node_modules/rxjs/dist/types/internal/util/reportUnhandledError.d.ts.map",
+    "node_modules/rxjs/dist/types/internal/util/pipe.d.ts.map",
+    "node_modules/rxjs/dist/types/internal/util/not.d.ts.map",
+    "node_modules/rxjs/dist/types/internal/util/noop.d.ts.map",
+    "node_modules/rxjs/dist/types/internal/util/mapOneOrManyArgs.d.ts.map",
+    "node_modules/rxjs/dist/types/internal/util/lift.d.ts.map",
+    "node_modules/rxjs/dist/types/internal/util/isScheduler.d.ts.map",
+    "node_modules/rxjs/dist/types/internal/util/isReadableStreamLike.d.ts.map",
+    "node_modules/rxjs/dist/types/internal/util/isPromise.d.ts.map",
+    "node_modules/rxjs/dist/types/internal/util/isObservable.d.ts.map",
+    "node_modules/parse-latin/readme.md",
+    "node_modules/sass-embedded/README.md",
+    "node_modules/parse-entities/readme.md",
+    "node_modules/pako/CHANGELOG.md",
+    "node_modules/parse-css-color/README.md",
+    "node_modules/parse-css-color/CHANGELOG.md",
+    "node_modules/pako/README.md",
+    "node_modules/parse-numeric-range/README.md",
+    "node_modules/regex/README.md",
+    "node_modules/speech-rule-engine/lib/README.md",
+    "node_modules/picomatch/README.md",
+    "node_modules/picomatch/CHANGELOG.md",
+    "node_modules/path-to-regexp/Readme.md",
+    "node_modules/parse-svg-path/Readme.md",
+    "node_modules/path-parse/README.md",
+    "node_modules/picocolors/README.md",
+    "node_modules/postcss-value-parser/README.md",
+    "node_modules/property-information/readme.md",
+    "node_modules/pretty-bytes/readme.md",
+    "node_modules/pretty-time/README.md",
+    "node_modules/queue-microtask/README.md",
+    "node_modules/range-parser/HISTORY.md",
+    "node_modules/reading-time/README.md",
+    "node_modules/range-parser/README.md",
+    "node_modules/regex-recursion/README.md",
+    "quartz/static/og-image.png",
+    "quartz/static/icon.png",
+    "docs/images/social-image-preview-light.png",
+    "docs/images/social-image-preview-dark.png",
+    "docs/images/quartz-layout-tablet.png",
+    "docs/images/quartz-layout-mobile.png",
+    "docs/images/quartz-layout-desktop.png",
+    "docs/images/quartz transform pipeline.png",
+    "docs/images/github-quick-setup.png",
+    "docs/images/github-init-repo-options.png",
+    "未命名.canvas"
   ]
 }
