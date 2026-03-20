@@ -1,3 +1,137 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// 首页隐藏标题和元信息
+.page-kind-index {
+  .article-title,
+  .content-meta {
+    display: none !important;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  > blockquote {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-left: none;
+    background: var(--lightgray);
+    border-radius: 8px;
+  }
+}
+
+// 首页卡片容器
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 2rem;
+  
+  // 卡片样式 - Zen/Quartz 风格
+  a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px 24px;
+    padding-left: 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    background: var(--lightgray);
+    border: 1px solid transparent;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    
+    // 左侧彩色条
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, #7aa2f7 0%, #bb9af7 100%);
+      border-radius: 12px 0 0 12px;
+    }
+    
+    // 偶数卡片不同颜色
+    &:nth-child(2)::before {
+      background: linear-gradient(180deg, #f7768e 0%, #ff9e64 100%);
+    }
+    
+    &:nth-child(3)::before {
+      background: linear-gradient(180deg, #9ece6a 0%, #73daca 100%);
+    }
+    
+    &:nth-child(4)::before {
+      background: linear-gradient(180deg, #e0af68 0%, #bb9af7 100%);
+    }
+    
+    // Hover 效果
+    &:hover {
+      border-color: var(--darkgray);
+      transform: translateY(-2px);
+    }
+    
+    // 卡片内容
+    .card-content {
+      flex: 1;
+      
+      strong {
+        display: block;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: var(--dark);
+      }
+      
+      span {
+        font-size: 0.85rem;
+        color: var(--darkgray);
+      }
+    }
+    
+    // 右侧箭头
+    .card-arrow {
+      font-size: 1.2rem;
+      color: var(--gray);
+      margin-left: 12px;
+      transition: transform 0.2s ease;
+    }
+    
+    &:hover .card-arrow {
+      transform: translateX(4px);
+      color: var(--secondary);
+    }
+  }
+}
+
+// 深色模式适配
+@media (prefers-color-scheme: dark) {
+  .page-kind-index {
+    .home-grid a {
+      background: #24283b;
+      
+      .card-content strong {
+        color: #c0caf5;
+      }
+      
+      .card-content span {
+        color: #a9b1d6;
+      }
+      
+      .card-arrow {
+        color: #565f89;
+      }
+    }
+  }
+}
+
+// 代码字体
+code {
+  font-family: "JetBrains Mono", "Noto Sans SC", monospace;
+}
